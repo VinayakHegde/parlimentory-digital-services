@@ -46,7 +46,7 @@ export class HomeComponent {
       this.eventsList = null;
       this.eventDates = null;
       this.loading = false;
-      this.error = true;
+      this.error = error;
     });
   }
 
