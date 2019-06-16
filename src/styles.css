@@ -1,0 +1,37 @@
+app-root{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    overflow: hidden;
+}
+app-home {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.k-calendar{
+    width: 320px !important;
+    height: 280px !important;
+}  
+.k-calendar-navigation .k-content ul {
+    width: 3.5em !important;
+}
+
+.k-calendar .k-today{
+    color: #656565 !important;
+}
+.k-calendar .k-state-selected .k-link {
+    border-color: #006634 !important;
+    background-color: #006634 !important;
+}
+
+@media (min-width: 768px) {
+    app-home {
+        overflow: hidden;
+        flex-flow: row wrap;
+
+    }
+}

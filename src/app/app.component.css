@@ -1,0 +1,33 @@
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  width: fit-content;
+}
+.app-header-title {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  background: #006634;
+  width: 100%;
+}
+.app-footer{
+  height: 25px;
+  line-height: 25px;
+  color: white;
+  text-align: center;
+  background: #006634;
+}
+
+@media (min-width: 768px){
+  .col-sm-3 {
+    width: 300px !important;
+  }
+  .col-sm-9 {
+    width: calc(100% - 300px) !important;
+  }
+}

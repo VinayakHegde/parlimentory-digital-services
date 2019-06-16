@@ -1,0 +1,57 @@
+.event-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100px;
+}
+
+.event-header {
+    background: #006634;
+    color: #fff;
+    font-size: 1.5em;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.card-segment {
+    padding-left: 10px;
+}
+
+.events-details {
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    flex-direction: column;
+    
+}
+.event-duration {
+    width: 150px;
+}
+
+.event-description{
+    flex: 1;
+}
+
+.event-details-more {
+    height: 30px;
+    width: 70px;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    outline: none;
+    text-align: left;
+    padding: 8px;
+}
+
+@media (min-width: 768px) {
+    
+    .events-details {
+        border-top: 1px solid #ccc;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+}

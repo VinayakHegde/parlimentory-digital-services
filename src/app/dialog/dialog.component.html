@@ -1,0 +1,25 @@
+<app-loading-indicator *ngIf="!show"></app-loading-indicator>
+<div class="dialog-wrapper" *ngIf="show" (click)="close()">
+  <div class="dialog">  
+    <div class="dialog-header">
+      <div class="dialog-title event-category">{{details.Category}}</div>
+      <div class="dialog-close" (click)="close()">&times;</div>
+    </div>
+    <div class="dialog-content" [ngClass]="{'dialog-no-content' : !members.length}">
+      <h3 *ngIf="members.length">
+        MP's in the Business
+      </h3>
+      <div *ngFor="let member of members" class="member-details">
+          <div class="details full-title">
+            {{member.FullTitle}}
+          </div>
+          <div class="details party-constituency">
+            {{member.Party['#text']}} MP for {{member.MemberFrom}}
+          </div>
+      </div>
+      <h3 *ngIf="!members.length">
+        Not member specific business.
+      </h3>
+    </div>
+  </div>
+</div>

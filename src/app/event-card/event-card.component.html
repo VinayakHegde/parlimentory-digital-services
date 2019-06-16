@@ -1,0 +1,15 @@
+<div class="event-card">
+  <div class="event-header card-segment">
+    {{ header | formatDate}}
+  </div>
+  <div class="events-details" *ngFor="let event of details">
+    <div class="event-duration card-segment">
+      {{event.StartTime | formatTime }}{{event.EndTime | formatTime : ' - '}} 
+    </div>
+    <div class="event-description card-segment">
+      {{event.Description}}
+    </div>
+    <button class="event-details-more" (click)="showMore(event)">{{event.Members.length}}Details</button>
+  </div>
+  
+</div>

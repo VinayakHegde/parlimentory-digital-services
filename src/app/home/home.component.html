@@ -1,0 +1,16 @@
+<div class="calendar-wrapper">
+    <kendo-calendar [value]="today" (valueChange)="onChange($event)"></kendo-calendar>
+</div>
+<div class="event-cards-wrapper" *ngIf="eventDates && eventDates.length">
+    <!-- <div class="events-container-header">{{recentWeek.FirstDay | formatDate }}{{recentWeek.LastDay | formatDate : ' - ' }}</div> -->
+    <app-event-card class="app-event-card" 
+        *ngFor="let key of eventDates" 
+        [details]="eventsList[key]" 
+        [header]="key" 
+        (callback)="setEvent($event)">
+    </app-event-card>
+</div>
+<div class="event-cards-wrapper" *ngIf="!eventDates || !eventDates.length && !error">No Business scheduled</div>
+<div class="event-cards-wrapper" *ngIf="error">Something went wrong, please try again!</div>
+<app-dialog *ngIf="event" [details]="event" (callback)="setEvent()"></app-dialog>
+<app-loading-indicator *ngIf="loading"></app-loading-indicator>
