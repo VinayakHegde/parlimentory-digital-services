@@ -1,0 +1,4 @@
+{
+    "eventListUrl": "http://service.calendar.parliament.uk/calendar/events/list.json?house=commons",
+    "membersUrl": "http://data.parliament.uk/membersdataplatform/services/mnis/members/query/id="
+}
