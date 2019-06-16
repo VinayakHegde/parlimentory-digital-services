@@ -29,6 +29,11 @@ app-home {
 }
 
 @media (min-width: 768px) {
+    app-root{
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
     app-home {
         overflow: hidden;
         flex-flow: row wrap;

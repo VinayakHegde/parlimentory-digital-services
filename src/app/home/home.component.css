@@ -16,7 +16,11 @@ app-event-card {
     justify-content: center;
     align-items: center;
 }
-
+.event-cards-wrapper-message{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width: 768px) {
     .calendar-wrapper {
         justify-content: flex-start;

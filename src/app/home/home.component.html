@@ -10,9 +10,9 @@
         (callback)="setEvent($event)">
     </app-event-card>
 </div>
-<div class="event-cards-wrapper" *ngIf="!eventDates && !error">No Business scheduled</div>
-<div class="event-cards-wrapper" *ngIf="error">
-    Something went wrong, please try again!
+<h3 class="event-cards-wrapper event-cards-wrapper-message" *ngIf="(!eventDates || !eventDates.length) && !error">No Business scheduled</h3>
+<div class="event-cards-wrapper event-cards-wrapper-message" *ngIf="error">
+    <h3> Something went wrong, please try again!</h3>
     <div>{{error.message}}</div>
 </div>
 <app-dialog *ngIf="event" [details]="event" (callback)="setEvent()"></app-dialog>
