@@ -61,7 +61,7 @@
     "@progress/kendo-theme-default": "^3.7.0",
     "@telerik/kendo-intl": "1.5.2",
     "aspnet-prerendering": "^3.0.1",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "core-js": "^2.4.1",
     "hammerjs": "2.0.8",
     "rxjs": "^5.5.6",
